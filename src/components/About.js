@@ -5,8 +5,9 @@ import image2 from "./photos/IMG_0259.jpg";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 // import { relative } from 'path';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+//small change
 
 const About = () => {
   // const {key, setKey} = useState('home');
@@ -45,31 +46,30 @@ const About = () => {
             >
               <Tab eventKey="aboutme" title="About Me">
                 <p>
-                  Jason is a US Army veteran and recent MBA graduate with 7+
+                  I'm Jason, a US Army veteran and recent MBA graduate with 7+
                   years of professional experience in HR recruitment and IT
-                  Staffing currently pursuing Web Development certifications at
-                  Kable Academy; graduating in December 2022 and seeking a
+                  Staffing. I've obtained Web Development certifications at
+                  Kable Academy; graduated in December 2022 and currently seeking a
                   front-end developer position with a dynamic and well-regarded
-                  organization. Personal achievements include military service
+                  organization. My personal achievements include military service
                   in the US Army and recognition on multiple levels on tour
-                  during Operation Iraqi Freedom and Operation Enduring Freedom.{" "}
+                  during Operation Iraqi Freedom and Operation Enduring Freedom. But, above it all I'm proud of my 7 year old son (Isaiah), 5 year old daughter (Zoe), and Fiance (Jamie).{" "}
                 </p>
               </Tab>
               <Tab eventKey="technologies" title="Technologies">
                 <ul>
-                  <li>HTML5</li>
-                  <li>CSS3</li>
-                  <li>JavaScript</li>
-                  <li>React.js</li>
-                  <li>Bootstrap</li>
-                  <li>Node.js</li>
-                  <li>MongoDB/NoSQL</li>
+                  <li style={{color:'blue'}}>HTML5</li>
+                  <li style={{color:'blue'}}>CSS3</li>
+                  <li style={{color:'blue'}}>JavaScript</li>
+                  <li style={{color:'blue'}}>React.js</li>
+                  <li style={{color:'blue'}}>Bootstrap 5</li>
+                  <li style={{color:'blue'}}>Node.js</li>
+                  <li style={{color:'blue'}}>MongoDB/NoSQL</li>
                 </ul>
               </Tab>
             </Tabs>
           </div>
         </div>
-        <FontAwesomeIcon icon={faEnvelope}/>
         <hr />
       </form>
 
@@ -124,21 +124,21 @@ const About = () => {
             </Tab>
             <Tab eventKey="technologies" title="Technologies">
               <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>React.js</li>
-                <li>Bootstrap</li>
-                <li>Node.js</li>
-                <li>MongoDB/NoSQL</li>
+                <li style={{color:'blue'}}>HTML5</li>
+                <li style={{color:'blue'}}>CSS3</li>
+                <li style={{color:'blue'}}>JavaScript</li>
+                <li style={{color:'blue'}}>React.js</li>
+                <li style={{color:'blue'}}>Bootstrap 5</li>
+                <li style={{color:'blue'}}>Node.js</li>
+                <li style={{color:'blue'}}>MongoDB/NoSQL</li>
               </ul>{" "}
             </Tab>
           </Tabs>
         </div>
       </div>
-      <FontAwesomeIcon icon={faEnvelope} />
     </div>
   );
 };
 
 export default About;
+

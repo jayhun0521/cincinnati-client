@@ -75,6 +75,10 @@ label {
   justify-content: center;
 }
 
+.allAttractions:hover {
+  background-color: greenyellow;
+}
+
 .card {
   margin: 10px;
 }
@@ -83,3 +87,10 @@ label {
   height: 200px;
   width: 100%;
 }
+
+.hist-text{
+  border: 5px solid;
+  padding: 15px;
+  font-weight: 500;
+}
+

@@ -7,52 +7,47 @@ import Card from 'react-bootstrap/Card'
 const Attraction = (props) => {
   return (
     <div className="allAttractions justify-content-lg-center">
-
-<Card style={{ width: '18rem', border: '2px solid' }}>
-      <Card.Img variant="top" src={props.attraction.imageURL} style={{border: '2px solid'}} />
-      <Card.Body>
-        <Card.Title>{props.attraction.name}</Card.Title>
-        <Card.Text>
-        <Link className='link-details' link to={'/attractions/' + props.attraction._id}><Button variant="dark" size="md" >Details</Button></Link>
-        </Card.Text>
-        <Button variant="dark" size="md" font-color='white'><a
-                className="link-site"
-                href={props.attraction.website}
-                target="_blank"
-                rel="noreferrer"
+      <Card style={{ width: "18rem", border: "2px solid" }}>
+        <Card.Img
+          variant="top"
+          src={props.attraction.imageURL}
+          style={{ border: "2px solid" }}
+        />
+        <Card.Body>
+          <Card.Title>{props.attraction.name}</Card.Title>
+          <Card.Text>
+            <Link
+              className="link-details"
+              link
+              to={"/attractions/" + props.attraction._id}
+            >
+              <Button
+                variant="dark"
+                size="md"
+                data-toggle="button"
+                aria-pressed="false"
+                autocomplete="off"
               >
-                Website
-              </a></Button>
-      </Card.Body>
-    </Card>
-
-        {/* {/* <div className="attractionsCard">
-          <div className="cardImage">
-            <img
-              className="attractionImage"
-              src={props.attraction.imageURL}
-              alt="attraction picture"
-            />
-          </div>
-          <div className="text">
-            <div className="text-name" >{props.attraction.name}</div>
-            <div className='text-link'>
-                      <Link className='link-details' Link to={'/viewattractions'}>Details</Link>
-                  </div>
-            <div className="website">
-              <a
-                className="link-site"
-                href={props.attraction.website}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Website
-              </a>
-            </div>
-          </div> */}
-        {/* </div> */} 
-       
-
+                Details
+              </Button>
+            </Link>
+          </Card.Text>
+          <Button variant="dark" size="md">
+            <a
+              className="link-site"
+              href={props.attraction.website}
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "white" }}
+              data-toggle="button"
+              aria-pressed="false"
+              autocomplete="off"
+            >
+              Website
+            </a>
+          </Button>
+        </Card.Body>
+      </Card>
     </div>
   );
 };
@@ -67,7 +62,7 @@ export default class Attractions extends Component {
   }
   componentDidMount() {
     axios
-      .get("https://hunter-capstone-api.onrender.com/attractions/")
+      .get("https://hunter-updated-api.onrender.com/attractions/")
       .then((response) => {
         this.setState({
           attractions: response.data
@@ -95,6 +90,9 @@ export default class Attractions extends Component {
 
         <div className="attractionsContainer">
           <h2 className="attractionsHeader text-center">Attractions</h2>
+          <h3 className="attractionsSubHeader text-center"> Must-see locations that make Cincinnati unique</h3>    
+          <br/>
+          <h4 className="attractionsSelect text-center">Please select your point of interest</h4>
           <div className="attractionsInnerContainer">
             {this.attractionsList()}
           </div>
